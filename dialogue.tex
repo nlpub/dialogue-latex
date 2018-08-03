@@ -1,0 +1,80 @@
+\documentclass[a4paper]{article}
+
+\usepackage[left=3cm,top=2cm,bottom=2cm,right=1.5cm]{geometry}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage{footmisc}
+\def\footnotelayout{\color{blue}}
+
+\everymath{\color{red}}
+\everydisplay{\color{red}}
+
+\date{}
+
+\begin{document}
+
+\selectlanguage{russian}
+\title{Научная статья}
+\author{Первый автор \and Второй автор}
+\let\newpage\relax\maketitle
+
+\selectlanguage{english}
+\title{A Research Paper}
+\author{First Author \and Second Author}
+\maketitle
+
+\section{Examples}
+
+I want this example to be useful.\footnote{But who can be sure?}
+
+\subsection{Formul\ae}
+
+What if I want a vector like $\vec{x}$?
+
+\begin{equation}
+  \text{similarity} = \cos(\theta) = {\mathbf{A} \cdot \mathbf{B} \over \|\mathbf{A}\| \|\mathbf{B}\|}
+\end{equation}
+
+\subsection{Table}
+
+Table~\ref{tab:example} is a nice one.
+
+\begin{table}[htbp]
+\centering
+\caption{\label{tab:example}Wow!}
+\begin{tabular}{|c|c|c|}\hline
+\LaTeX & \LaTeX & \LaTeX \\\hline
+\LaTeX & \LaTeX & \LaTeX \\\hline
+\LaTeX & \LaTeX & \LaTeX \\\hline
+\end{tabular}
+\end{table}
+
+\subsection{Figure}
+
+Figure~\ref{fig:example} makes your paper visually appealing.
+
+\begin{figure}[htbp]
+\centering
+% The plot was obtained at https://people.sc.fsu.edu/~jburkardt/data/eps/eps.html.
+\includegraphics[scale=.75]{mathematica.eps}
+\caption{\label{fig:example}Great!}
+\end{figure}
+
+\subsection{Citations}
+
+Citations are a good thing~\cite{RUSSE2018}.
+
+\begin{thebibliography}{1}
+
+\bibitem{RUSSE2018}
+Panchenko A., Lopukhina A., Ustalov D., Lopukhin K., Arefyev N., Leontyev A., Loukachevitch N. (2018), RUSSE'2018: A Shared Task on Word Sense Induction for the Russian Language, Computational Linguistics and Intellectual Technologies: papers from the Annual conference ``Dialogue'', Moscow, Russia, pp.~547--564.
+
+\end{thebibliography}
+
+\end{document}
