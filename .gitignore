@@ -240,3 +240,18 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+
+# LaTeXML
+*.xml
+*.html
+*.css
+*.png
+LaTeXML.cache
+
+# output
+*.pdf
+*.icml
+*.rtf
+
+# vim
+*.swp
