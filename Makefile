@@ -1,5 +1,8 @@
 DOCUMENT := dialogue
 
+view: $(DOCUMENT).pdf
+	xdg-open $<
+
 .PHONY: $(DOCUMENT).pdf
 $(DOCUMENT).pdf:
 	latexmk -pdf $(DOCUMENT)
@@ -7,6 +10,10 @@ $(DOCUMENT).pdf:
 .PHONY: $(DOCUMENT).icml
 $(DOCUMENT).icml:
 	pandoc --standalone -f latex -t icml -o $@ $(DOCUMENT).tex
+
+.PHONY: $(DOCUMENT).docx
+$(DOCUMENT).docx:
+	pandoc --standalone -f latex -t docx --bibliography=dialogue.bib --natbib -o $@ $(DOCUMENT).tex
 
 .PHONY: $(DOCUMENT).xml
 $(DOCUMENT).xml:
@@ -23,5 +30,5 @@ $(DOCUMENT).rtf: $(DOCUMENT).html
 clean:
 	latexmk -C -pdf $(DOCUMENT)
 	rm -fv *-converted-to.pdf
-	rm -fv $(DOCUMENT).{xml,html,icml,pdf}
+	rm -fv $(DOCUMENT).{xml,html,icml,docx,rtf,pdf,bbl}
 	rm -fv LaTeXML.cache LaTeXML.css ltx-article.css
