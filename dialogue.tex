@@ -6,11 +6,43 @@
 
 \begin{document}
 
-\settitle{russian}{Как написать статью}{Первый автор \and Второй автор}
-\let\newpage\relax\maketitle
+\begin{otherlanguage}{english}
+\begin{center}
+{\Large\bfseries{A Typesetting Example of the Paper Title\\in Multiple Lines}}
 
-\settitle{english}{How to write a Research Paper}{First Author \and Second Author}
-\maketitle
+\medskip
+
+Surname N. P. (\texttt{user@domain.tld}), Surname N. P. (\texttt{user@domain.tld}),\\Surname N. P. (\texttt{user@domain.tld})
+
+\medskip
+
+Affiliation, City, Country
+\end{center}
+
+Please be careful when typesetting the paper.\medskip
+
+\textbf{Key words:} syntax parsing, syntax parser, parsing, misspellings, misprints
+\end{otherlanguage}
+
+\bigskip
+
+\begin{otherlanguage}{russian}
+\begin{center}
+{\Large\bfseries{Пример многострочного написания\\заглавия статьи}}
+
+\medskip
+
+Фамилия И. О. (\texttt{user@domain.tld}), Фамилия И. О. (\texttt{user@domain.tld}),\\Фамилия И. О. (\texttt{user@domain.tld})
+
+\medskip
+
+Организация, город, страна
+\end{center}
+
+Просим внимательно ознакомиться с требованиями и обязательно следовать им при оформлении доклада. В случае несоблюдения требований редакционная коллегия будет отсылать доклады обратно авторам для доработки, а также оставляет за собой право не принять доклад на основании неудовлетворительного оформления.\medskip
+
+\textbf{Ключевые слова:} требования, доклады, примеры
+\end{otherlanguage}
 
 \section{Examples}
 
@@ -21,16 +53,16 @@ I want this example to be useful.\footnote{But who can be sure?}
 What if I want a vector like $\vec{x}$?
 
 \begin{equation}
-  \text{similarity} = \cos(\theta) = {\mathbf{A} \cdot \mathbf{B} \over \|\mathbf{A}\| \|\mathbf{B}\|}
+  \text{similarity} = \cos(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|}
 \end{equation}
 
 \subsection{Table}
 
-Table~\ref{tab:example} is a nice one.
+Table 1 is a nice one.
 
 \begin{table}[htbp]
 \centering
-\caption{\label{tab:example}Wow!}
+\caption{Wow!}
 \begin{tabular}{|c|c|c|}\hline
 \LaTeX & \LaTeX & \LaTeX \\\hline
 \LaTeX & \LaTeX & \LaTeX \\\hline
@@ -40,24 +72,33 @@ Table~\ref{tab:example} is a nice one.
 
 \subsection{Figure}
 
-Figure~\ref{fig:example} makes your paper visually appealing.
+Figure 1 makes your paper visually appealing.
 
 \begin{figure}[htbp]
 \centering
 % The plot was obtained at https://people.sc.fsu.edu/~jburkardt/data/eps/eps.html.
 \includegraphics[scale=.75]{mathematica.eps}
-\caption{\label{fig:example}Great!}
+\caption{Great!}
 \end{figure}
 
 \subsection{Citations}
 
-Citations are a good thing~\cite{RUSSE2018}.
+Citations are a good thing [1]. However, at the present moment we do not support proper {\LaTeX} references. Just use \verb|[1]| instead of \verb|\cite{...}| and \verb|1| instead of \verb|\ref{fig:example}|. Unfortunately, you have to count references manually.
 
-\begin{thebibliography}{1}
+\subsubsection{Test}
 
-\bibitem{RUSSE2018}
-Panchenko A., Lopukhina A., Ustalov D., Lopukhin K., Arefyev N., Leontyev A., Loukachevitch N. (2018), RUSSE'2018: A Shared Task on Word Sense Induction for the Russian Language, Computational Linguistics and Intellectual Technologies: papers from the Annual conference ``Dialogue'', Moscow, Russia, pp.~547--564.
+\begin{itemize}
+  \item Do not use any kind of non-breaking spaces, such as \verb|~|, \verb|\,|, etc. Use only the regular ones.
+\end{itemize}
 
-\end{thebibliography}
+\section{Improvements}
+
+Do you have an idea of how to improve the template? Please reach us at\\\texttt{https://github.com/nlpub/dialogue-latex}.
+
+\color{blue}\section*{References}
+
+\begin{enumerate}
+  \item Panchenko A., Lopukhina A., Ustalov D., Lopukhin K., Arefyev N., Leontyev A., Loukachevitch N. (2018), RUSSE'2018: A Shared Task on Word Sense Induction for the Russian Language, Computational Linguistics and Intellectual Technologies: papers from the Annual conference ``Dialogue'', Moscow, Russia, pp. 547--564.
+\end{enumerate}
 
 \end{document}
