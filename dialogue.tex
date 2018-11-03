@@ -1,31 +1,20 @@
 \documentclass[a4paper]{article}
 
-\usepackage[left=3cm,top=2cm,bottom=2cm,right=1.5cm]{geometry}
-\usepackage[T2A,T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[russian,english]{babel}
-\usepackage{amsmath,amssymb}
-\usepackage{titling}
-\usepackage{graphicx}
-\usepackage{xcolor}
-
-\usepackage{footmisc}
-\def\footnotelayout{\color{blue}}
-
-\everymath{\color{red}}
-\everydisplay{\color{red}}
+\usepackage{dialogue}
 
 \date{}
 
 \begin{document}
 
-\selectlanguage{russian}
-\title{Научная статья}
-\author{Первый автор \and Второй автор}
+\settitle{russian}{Как написать статью}{Первый автор \and Второй автор}
+
+%% \selectlanguage{russian}
+%% \title{Как написать статью}
+%% \author{Первый автор \and Второй автор}
 \let\newpage\relax\maketitle
 
 \selectlanguage{english}
-\title{A Research Paper}
+\title{How to write a Research Paper}
 \author{First Author \and Second Author}
 \maketitle
 
