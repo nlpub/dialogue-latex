@@ -252,6 +252,7 @@ LaTeXML.cache
 *.pdf
 *.icml
 *.rtf
+*.docx
 
 # vim
 *.swp
