@@ -1,3 +1,8 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{dialogue}
+
+\LoadClass[12pt,a4paper]{article}
+
 \usepackage[left=3cm,top=2cm,bottom=2cm,right=1.5cm]{geometry}
 \usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -12,9 +17,8 @@
 
 \everymath{\color{red}}
 \everydisplay{\color{red}}
+\date{}
 
-\newcommand\settitle[3]{%
-\selectlanguage{#1}
-\title{#2}
-\author{#3}
-}
+\renewcommand*{\usepackage}{\PackageError{dialogue}{please do not use extra packages}}
+\renewcommand*{\input}{\PackageError{dialogue}{please do not include other documents}}
+\renewcommand*{\include}{\PackageError{dialogue}{please do not include other documents}}
