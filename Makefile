@@ -9,11 +9,11 @@ $(DOCUMENT).pdf:
 
 .PHONY: $(DOCUMENT).icml
 $(DOCUMENT).icml:
-	pandoc -s -f latex -t icml -o $@ --bibliography=dialogue.bib --filter pandoc-citeproc $(DOCUMENT).tex
+	pandoc -s -f latex -t icml -o $@ --bibliography=$(DOCUMENT).bib --filter pandoc-citeproc $(DOCUMENT).tex
 
 .PHONY: $(DOCUMENT).docx
 $(DOCUMENT).docx:
-	pandoc -s -f latex -t docx -o $@ --bibliography=dialogue.bib --filter pandoc-citeproc $(DOCUMENT).tex
+	pandoc -s -f latex -t docx -o $@ --bibliography=$(DOCUMENT).bib --filter pandoc-citeproc $(DOCUMENT).tex
 
 .PHONY: $(DOCUMENT).xml
 $(DOCUMENT).xml:

@@ -19,6 +19,9 @@
 \everydisplay{\color{red}}
 \date{}
 
+\usepackage[numbers]{natbib}
+\bibliographystyle{abbrvnat}
+
 \renewcommand*{\usepackage}{\PackageError{dialogue}{please do not use extra packages}}
 \renewcommand*{\input}{\PackageError{dialogue}{please do not include other documents}}
 \renewcommand*{\include}{\PackageError{dialogue}{please do not include other documents}}
