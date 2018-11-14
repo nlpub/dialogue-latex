@@ -4,7 +4,7 @@
 \LoadClass[12pt,a4paper]{article}
 
 \usepackage[left=3cm,top=2cm,bottom=2cm,right=1.5cm]{geometry}
-\usepackage[T2A,T1]{fontenc}
+\usepackage[T1,T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian,english]{babel}
 \usepackage{amsmath,amssymb}
@@ -19,8 +19,7 @@
 \everydisplay{\color{red}}
 \date{}
 
-\usepackage[numbers]{natbib}
-\bibliographystyle{abbrvnat}
+\bibliographystyle{plain}
 
 \renewcommand*{\usepackage}{\PackageError{dialogue}{please do not use extra packages}}
 \renewcommand*{\input}{\PackageError{dialogue}{please do not include other documents}}
