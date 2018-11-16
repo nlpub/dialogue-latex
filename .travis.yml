@@ -1,3 +1,4 @@
+dist: xenial
 language: generic
 before_script:
 - sudo apt-get install texlive texlive-latex-extra texlive-lang-cyrillic latexmk make pandoc pandoc-citeproc pandoc-data
