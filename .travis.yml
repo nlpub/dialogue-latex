@@ -1,5 +1,5 @@
 dist: xenial
 language: generic
 before_script:
-- sudo apt-get install texlive texlive-latex-extra texlive-font-utils texlive-lang-cyrillic latexmk make pandoc pandoc-citeproc pandoc-data
+- sudo apt-get install texlive texlive-latex-extra texlive-font-utils texlive-lang-cyrillic latexmk make pandoc pandoc-citeproc pandoc-data ghostscript
 script: make dialogue.pdf dialogue.docx dialogue.icml
