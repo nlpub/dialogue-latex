@@ -1,0 +1,4 @@
+language: generic
+before_script:
+- apt-get install texlive latexmk make pandoc pandoc-citeproc
+script: make dialogue.pdf dialogue.docx dialogue.icml
