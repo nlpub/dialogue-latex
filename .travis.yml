@@ -1,4 +1,4 @@
 language: generic
 before_script:
-- sudo apt-get install texlive texlive-latex-extra texlive-lang-cyrillic latexmk make pandoc pandoc-citeproc
+- sudo apt-get install texlive texlive-latex-extra texlive-lang-cyrillic latexmk make pandoc pandoc-citeproc pandoc-data
 script: make dialogue.pdf dialogue.docx dialogue.icml
