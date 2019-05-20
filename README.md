@@ -12,7 +12,7 @@ Proceedings of the [Dialogue](http://www.dialog-21.ru/en/) conference are typese
 * make sure that your document compiles with zero errors
 * keep the document layout as simple as possible
 * use BibTeX to format the bibliography
-* run conversion command on your machine
+* run the conversion command on your machine
 
 ***Do Not...***
 
@@ -37,7 +37,7 @@ InDesign files are XML documents. Unfortunately, sometimes Pandoc produces non-w
 xmllint --noout dialogue.icml
 ```
 
-If error messages are shown, try modifying the file to ensure that no errors are shown.
+If error messages are shown, try modifying the `dialogue.icml` file in any text editor to ensure that no errors are shown.
 
 ## Support
 
