@@ -31,6 +31,14 @@ pandoc -s -f latex -t icml -o dialogue.icml --bibliography=dialogue.bib --filter
 
 This command converts your document `dialogue.tex` and bibliography `dialogue.bib` to `dialogue.icml`. The `splncs.csl` style is used for bibliography conversion (provided in the repository). Warnings that are related to formulas are OK.
 
+InDesign files are XML documents. Unfortunately, sometimes Pandoc produces non-well-formed XML. Please run the following command to verify this:
+
+```shell
+xmllint --noout dialogue.icml
+```
+
+If error messages are shown, try modifying the file to ensure that no errors are shown.
+
 ## Support
 
 Please use [GitHub Issues](https://github.com/nlpub/dialogue-latex/issues) for getting and offering help.
