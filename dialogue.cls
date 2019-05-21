@@ -1,3 +1,5 @@
+% DO NOT MODIFY THIS FILE
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{dialogue}
 
@@ -24,3 +26,5 @@
 \renewcommand*{\usepackage}{\PackageError{dialogue}{please do not use extra packages}}
 \renewcommand*{\input}{\PackageError{dialogue}{please do not include other documents}}
 \renewcommand*{\include}{\PackageError{dialogue}{please do not include other documents}}
+
+% DO NOT MODIFY THIS FILE
