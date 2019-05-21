@@ -256,3 +256,9 @@ LaTeXML.cache
 
 # vim
 *.swp
+
+# archives
+*.zip
+*.rar
+*.tar
+*.tar.*
