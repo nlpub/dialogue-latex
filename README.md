@@ -4,6 +4,8 @@ Proceedings of the [Dialogue](http://www.dialog-21.ru/en/) conference are typese
 
 [![Build Status](https://travis-ci.org/nlpub/dialogue-latex.svg?branch=master)](https://travis-ci.org/nlpub/dialogue-latex)
 
+This work is in the public domain and offered as-is without any warranties, see [LICENSE.txt](LICENSE.txt) for details.
+
 ## Guidelines
 
 ***Do...***
@@ -41,8 +43,4 @@ If error messages are shown, try modifying the `dialogue.icml` file in any text 
 
 ## Support
 
-Please use [GitHub Issues](https://github.com/nlpub/dialogue-latex/issues) for getting and offering help.
-
-## License
-
-This work is in the public domain, see [LICENSE.txt](LICENSE.txt) for details.
+Please reach the Dialogue organizers regarding the formatting issues: <http://www.dialog-21.ru/en/about/contacts/>.
