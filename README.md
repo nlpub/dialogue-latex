@@ -1,10 +1,22 @@
 # LaTeX Template for the Dialogue Conference
 
-Proceedings of the [Dialogue](http://www.dialog-21.ru/en/) conference are typeset in the Adobe InDesign suite which is not compatible with LaTeX. However, it is possible to convert LaTeX documents to the InDesign format, ICML, using [Pandoc](https://pandoc.org). This conversion process is *highly error-prone*, so we had to limit the available features strictly.
+Proceedings of the [Dialogue](http://www.dialog-21.ru/en/) conference are typeset in the Adobe InDesign suite which is not compatible with LaTeX. However, it is possible to convert LaTeX documents to the InDesign format, ICML, using [Pandoc](https://pandoc.org). This template aims at following the conference [requirements](http://www.dialog-21.ru/en/guidelines/), so you can submit papers in your favourite typesetting system.
 
 [![Build Status](https://travis-ci.org/nlpub/dialogue-latex.svg?branch=master)](https://travis-ci.org/nlpub/dialogue-latex)
 
 This work is in the public domain and offered as-is without any warranties, see [LICENSE.txt](LICENSE.txt) for details.
+
+## Thanks!
+
+If you found this template useful and would like to support its author, here is the link: <https://yasobe.ru/na/nlpub>.
+
+## Why are some parts of the document in red or blue?
+
+These colors help the publisher to transfer your content into the final template using InDesign. This is not a mistake and is done intentionally.
+
+## Why cannot I use extra packages or modify `dialogue.cls`?
+
+The conversion process from LaTeX to InDesign is *highly error-prone*. The available features are strictly limited to provide a stable subset of functionality.
 
 ## Guidelines
 
@@ -40,7 +52,3 @@ xmllint --noout dialogue.icml
 ```
 
 If error messages are shown, try modifying the `dialogue.icml` file in any text editor to ensure that no errors are shown.
-
-## Support
-
-Please reach the Dialogue organizers regarding the formatting issues: <http://www.dialog-21.ru/en/about/contacts/>.
