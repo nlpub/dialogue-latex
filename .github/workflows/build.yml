@@ -1,4 +1,4 @@
-name: LaTeX
+name: Build
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  latex:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -15,12 +15,17 @@ jobs:
       with:
         entrypoint: latexmk
         args: -pdf dialogue
+    - uses: actions/upload-artifact@v2
+      with:
+        name: dialogue
+        path: dialogue.pdf
+  pandoc:
+    runs-on: ubuntu-latest
+    steps:
     - uses: docker://pandoc/latex
       with:
         args: -s -f latex -t icml -o dialogue.icml --bibliography=dialogue.bib --filter pandoc-citeproc --csl=splncs.csl dialogue.tex
     - uses: actions/upload-artifact@v2
       with:
         name: dialogue
-        path: |
-          dialogue.pdf
-          dialogue.icml
+        path: dialogue.icml
