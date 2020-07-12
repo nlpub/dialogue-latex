@@ -14,7 +14,12 @@ jobs:
     - uses: xu-cheng/latex-action@v2
       with:
         root_file: dialogue.tex
+    - uses: docker://pandoc/latex
+      with:
+        args: -s -f latex -t icml -o dialogue.icml --bibliography=dialogue.bib --filter pandoc-citeproc --csl=splncs.csl dialogue.tex
     - uses: actions/upload-artifact@v2
       with:
-        name: dialogue.pdf
-        path: dialogue.pdf
+        name: dialogue
+        path: |
+          dialogue.pdf
+          dialogue.icml
