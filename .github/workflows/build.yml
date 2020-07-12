@@ -22,6 +22,7 @@ jobs:
   pandoc:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - uses: docker://pandoc/latex
       with:
         args: -s -f latex -t icml -o dialogue.icml --bibliography=dialogue.bib --filter pandoc-citeproc --csl=splncs.csl dialogue.tex
