@@ -2,13 +2,13 @@
 
 Proceedings of the [Dialogue](http://www.dialog-21.ru/en/) conference are typeset in the Adobe InDesign suite which is not compatible with LaTeX. However, it is possible to convert LaTeX documents to the InDesign format, ICML, using [Pandoc](https://pandoc.org). This template aims at following the conference [requirements](http://www.dialog-21.ru/en/guidelines/), so you can submit papers in your favourite typesetting system.
 
-[![Build Status](https://travis-ci.org/nlpub/dialogue-latex.svg?branch=master)](https://travis-ci.org/nlpub/dialogue-latex)
+[![Build Status](https://github.com/nlpub/dialogue-latex/workflows/Build/badge.svg?branch=master)](https://github.com/nlpub/dialogue-latex/actions?query=workflow%3ABuild)
 
 This work is in the public domain and offered as-is without any warranties, see [LICENSE.txt](LICENSE.txt) for details.
 
 ## Thanks!
 
-If you found this template useful and would like to support its author, here is the link: <https://yasobe.ru/na/nlpub>.
+This template is brought to you by Dmitry Ustalov and the [NLPub](https://nlpub.ru/) project. If you found this template useful and would like to support its author, here is the link: <https://yasobe.ru/na/nlpub>.
 
 ## Why are some parts of the document in red or blue?
 
