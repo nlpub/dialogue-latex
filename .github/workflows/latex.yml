@@ -11,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: xu-cheng/latex-action@v2
+    - uses: docker://xucheng/texlive-full
       with:
-        root_file: dialogue.tex
+        entrypoint: latexmk
+        args: -pdf dialogue
     - uses: docker://pandoc/latex
       with:
         args: -s -f latex -t icml -o dialogue.icml --bibliography=dialogue.bib --filter pandoc-citeproc --csl=splncs.csl dialogue.tex
