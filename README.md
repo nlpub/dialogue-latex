@@ -8,7 +8,7 @@ This work is in the public domain and offered as-is without any warranties, see 
 
 ## Thanks!
 
-This template is brought to you by Dmitry Ustalov and the [NLPub](https://nlpub.ru/) project. If you found this template useful and would like to support its author, here is the link: <https://yasobe.ru/na/nlpub>.
+This template is brought to you by Dmitry Ustalov and the [NLPub](https://nlpub.ru/) project. If you found this template useful and would like to support its author, here is the link: <https://nlpub.ru/NLPub:Support>.
 
 ## Why are some parts of the document in red or blue?
 
