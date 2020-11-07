@@ -25,7 +25,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: docker://pandoc/latex
       with:
-        args: -s -f latex -t icml -o dialogue.icml --bibliography=dialogue.bib --filter pandoc-citeproc --csl=splncs.csl dialogue.tex
+        args: -s -f latex -t icml -o dialogue.icml --bibliography=dialogue.bib -C --csl=splncs.csl dialogue.tex
     - uses: actions/upload-artifact@v2
       with:
         name: dialogue
