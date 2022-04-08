@@ -15,7 +15,7 @@ jobs:
       with:
         entrypoint: latexmk
         args: -pdf dialogue
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: dialogue
         path: dialogue.pdf
@@ -26,7 +26,7 @@ jobs:
     - uses: docker://pandoc/latex
       with:
         args: -s -f latex -t icml -o dialogue.icml --bibliography=dialogue.bib -C --csl=splncs.csl dialogue.tex
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: dialogue
         path: dialogue.icml
