@@ -10,7 +10,7 @@ jobs:
   latex:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3.0.0
+    - uses: actions/checkout@v3.0.1
     - uses: docker://xucheng/texlive-full
       with:
         entrypoint: latexmk
@@ -22,7 +22,7 @@ jobs:
   pandoc:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3.0.0
+    - uses: actions/checkout@v3.0.1
     - uses: docker://pandoc/latex
       with:
         args: -s -f latex -t icml -o dialogue.icml --bibliography=dialogue.bib -C --csl=splncs.csl dialogue.tex
