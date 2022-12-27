@@ -6,9 +6,13 @@ Proceedings of the [Dialogue](http://www.dialog-21.ru/en/) conference are typese
 
 This work is in the public domain and offered as-is without any warranties, see [LICENSE.txt](LICENSE.txt) for details.
 
+## Deprecated
+
+This template is deprecated. Please follow the official conference paper guidelines at <https://www.dialog-21.ru/en/requirements/>.
+
 ## Thanks!
 
-This template is brought to you by Dmitry Ustalov and the [NLPub](https://nlpub.ru/) project. If you found this template useful and would like to support its author, here is the link: <https://nlpub.ru/NLPub:Support>.
+This template is brought to you by the [NLPub](https://nlpub.ru/) project. If you found this template useful and would like to support its author, here is the link: <https://nlpub.ru/NLPub:Support>.
 
 ## Why are some parts of the document in red or blue?
 
